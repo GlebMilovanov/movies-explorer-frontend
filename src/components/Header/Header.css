@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 70px;
+  background-color: transparent;
+  position: fixed;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  transition: background-color 0.1s ease-in-out;
+  z-index: 100;
+  top: 0;
+}
+
+.header.header-scrolled {
+  background-color: rgba(250, 250, 250, 0.8);
+}
+
+.header.header-scrolled-main {
+  background-color: rgba(243, 193, 248, 0.8);
+}
+
+.header__logo-link {
+  width: 38px;
+  height: 38px;
+}
+
+.burger-button {
+  width: 44px;
+  height: 44px;
+  background-image: url(../../images/burger-button.svg);
+  background-color: transparent;
+  background-position: center;
+  border: none;
+  position: relative;
+  z-index: 10000;
+  padding: 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.burger-button_active {
+  background-image: url(../../images/close-button.svg);
+  background-size: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .header {
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 18px 14px;
+  }
+}
