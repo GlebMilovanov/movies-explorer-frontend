@@ -24,33 +24,15 @@ export const Header = ({ loggedIn }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   if (!headerPath) {
     return null;
   }
 
-  const isMainPage = pathname === '/';
-
-  let headerClass = 'header';
-
-  if (scrolled && isMainPage) {
-    headerClass += ' header-scrolled-main';
-  } else if (scrolled) {
-    headerClass += ' header-scrolled';
-  }
+  const isMain = pathname === '/';
 
   return (
-    <header className={headerClass}>
-      <Link to={'/'} className="header__logo-link link_hover">
+    <header className={`header ${isMain ? 'header_pink' : ''}`}>
+      <Link to={'/'} className="header__logo-link link link_hover">
         <img src={logo} alt="Логотип" className="header__logo" />
       </Link>
       {isDesktop || !loggedIn ? (
@@ -60,7 +42,7 @@ export const Header = ({ loggedIn }) => {
           <button
             type="button"
             onClick={handleMenuClick}
-            className={`burger-button button_hover ${
+            className={`burger-button button button_hover ${
               isMenuOpen ? 'burger-button_active' : ''
             }`}
           />

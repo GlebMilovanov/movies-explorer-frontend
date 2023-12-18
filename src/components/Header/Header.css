@@ -4,22 +4,15 @@
   justify-content: space-between;
   padding: 18px 70px;
   background-color: transparent;
-  position: fixed;
   max-width: 1280px;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   transition: background-color 0.1s ease-in-out;
-  z-index: 100;
-  top: 0;
 }
 
-.header.header-scrolled {
-  background-color: rgba(250, 250, 250, 0.8);
-}
-
-.header.header-scrolled-main {
-  background-color: rgba(243, 193, 248, 0.8);
+.header_pink {
+  background-color: #f3c1f8;
 }
 
 .header__logo-link {

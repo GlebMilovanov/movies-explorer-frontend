@@ -13,7 +13,7 @@ export const Portfolio = () => {
           return (
             <li key={idx} className="portfolio__element">
               <Link
-                className="portfolio__link link_hover"
+                className="portfolio__link link link_hover"
                 to={item.url}
                 target="_blank"
                 rel="noopener noreferrer"

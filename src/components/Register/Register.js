@@ -24,7 +24,7 @@ export const Register = ({ setRegistered }) => {
   return (
     <section className="register">
       <div className="register__header">
-        <Link to={'/'} className="register__logo-link link_hover">
+        <Link to={'/'} className="register__logo-link link link_hover">
           <img className="register__logo" src={logo} alt="Лого" />
         </Link>
         <h1 className="register__title">Добро пожаловать!</h1>
@@ -64,6 +64,7 @@ export const Register = ({ setRegistered }) => {
           error={errors.password}
           onChange={handleChange}
           minLength="8"
+          maxLength="30"
           isValid={isInputValid.password}
           required
         />
@@ -71,7 +72,7 @@ export const Register = ({ setRegistered }) => {
       </Form>
       <p className="register__text">
         Уже зарегистрированы?{' '}
-        <Link to={'/signin'} className="register__link link_hover">
+        <Link to={'/signin'} className="register__link link link_hover">
           Войти
         </Link>
       </p>

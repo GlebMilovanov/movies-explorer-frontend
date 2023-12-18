@@ -24,7 +24,7 @@ export const Login = ({ setLoggedIn }) => {
   return (
     <section className="login">
       <div className="login__header">
-        <Link to={'/'} className="login__logo-link link_hover">
+        <Link to={'/'} className="login__logo-link link link_hover">
           <img className="login__logo" src={logo} alt="Лого" />
         </Link>
         <h1 className="login__title">Рады видеть!</h1>
@@ -35,6 +35,7 @@ export const Login = ({ setLoggedIn }) => {
           name="email"
           type="email"
           placeholder="E-mail"
+          minLength="2"
           value={values.email || ''}
           error={errors.email}
           onChange={handleChange}
@@ -50,6 +51,7 @@ export const Login = ({ setLoggedIn }) => {
           error={errors.password}
           onChange={handleChange}
           minLength="8"
+          maxLength="30"
           isValid={isInputValid.password}
           required
         />
@@ -57,7 +59,7 @@ export const Login = ({ setLoggedIn }) => {
       </Form>
       <p className="login__text">
         Ещё не зарегистрированы?{' '}
-        <Link to={'/signup'} className="login__link link_hover">
+        <Link to={'/signup'} className="login__link link link_hover">
           Регистрация
         </Link>
       </p>

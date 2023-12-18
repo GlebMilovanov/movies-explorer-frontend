@@ -1,11 +1,11 @@
 .hero__container {
-  padding: 258px 0 224px;
+  padding: 184px 0 224px;
   background-color: #f3c1f8;
   display: flex;
   justify-content: center;
   background-image: url(../../images/practicum-logo-min.svg);
   background-repeat: no-repeat;
-  background-position: center 156px;
+  background-position: center 82px;
   background-size: 320px;
 }
 
@@ -22,16 +22,16 @@
 
 @media screen and (max-width: 1279px) {
   .hero__container {
-    padding: 400px 0 342px;
-    background-position: center 298px;
+    padding: 326px 0 342px;
+    background-position: center 224px;
     background-size: 320px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero__container {
-    padding: 281px 0 246px;
-    background-position: center 216px;
+    padding: 207px 0 246px;
+    background-position: center 142px;
     background-size: 248px;
   }
 

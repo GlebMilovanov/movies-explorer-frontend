@@ -22,19 +22,28 @@ function App() {
     <div className="page">
       <Header loggedIn={loggedIn} />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/movies" element={<Movies movies={movies} />} />
-        <Route path="/saved-movies" element={<SavedMovies movies={movies} />} />
+        <Route path="/" element={<Main name="home" />} />
+        <Route
+          path="/movies"
+          element={<Main name="movies" movies={movies} />}
+        />
+        <Route
+          path="/saved-movies"
+          element={<Main name="savedMovies" movies={movies} />}
+        />
         <Route
           path="/profile"
-          element={<Profile setLoggedIn={setLoggedIn} />}
+          element={<Main name="profile" setLoggedIn={setLoggedIn} />}
         />
         <Route
           path="/signup"
-          element={<Register setRegistered={setLoggedIn} />}
+          element={<Main name="signup" setRegistered={setLoggedIn} />}
         />
-        <Route path="/signin" element={<Login setLoggedIn={setLoggedIn} />} />
-        <Route path="*" element={<NotFound />} />
+        <Route
+          path="/signin"
+          element={<Main name="signin" setLoggedIn={setLoggedIn} />}
+        />
+        <Route path="*" element={<Main name="notFound" />} />
       </Routes>
       <Footer />
     </div>

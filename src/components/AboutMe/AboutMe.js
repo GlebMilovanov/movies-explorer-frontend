@@ -23,7 +23,7 @@ export const AboutMe = () => {
           </p>
           <Link
             to="https://github.com/GlebMilovanov"
-            className="about-me__link link_hover"
+            className="about-me__link link link_hover"
             target="_blank"
             rel="noopener noreferrer"
           >

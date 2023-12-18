@@ -12,7 +12,7 @@ export const SubmitButton = ({ title, isDisabled, type }) => {
       )}
       <button
         type="submit"
-        className={`submit-button button_hover ${
+        className={`submit-button button button_hover ${
           isDisabled ? 'submit-button_disabled' : ''
         }`}
         disabled={isDisabled}

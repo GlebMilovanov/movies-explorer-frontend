@@ -1,3 +1,5 @@
+import moviePlaceholder from '../images/film-card-placeholder.png';
+
 export const technologies = [
   'HTML',
   'CSS',
@@ -11,15 +13,15 @@ export const technologies = [
 export const portfolioInfo = [
   {
     title: 'Статичный сайт',
-    url: '#',
+    url: 'https://github.com/GlebMilovanov/how-to-learn',
   },
   {
     title: 'Адаптивный сайт',
-    url: '#',
+    url: 'https://github.com/GlebMilovanov/yet-another-project',
   },
   {
     title: 'Одностраничное приложение',
-    url: '#',
+    url: 'https://github.com/GlebMilovanov/react-mesto-api-full-gha',
   },
 ];
 
@@ -29,7 +31,7 @@ export const movies = [
     nameRU: 'Киноальманах «100 лет дизайна»',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: false,
   },
   {
@@ -37,7 +39,7 @@ export const movies = [
     nameRU: 'В погоне за Бенкси',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -45,7 +47,7 @@ export const movies = [
     nameRU: 'Баския: Взрыв реальности',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -53,7 +55,7 @@ export const movies = [
     nameRU: 'Бег это свобода',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -61,7 +63,7 @@ export const movies = [
     nameRU: 'Книготорговцы',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -69,7 +71,7 @@ export const movies = [
     nameRU: 'Когда я думаю о Германии ночью',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -77,7 +79,7 @@ export const movies = [
     nameRU: 'Gimme Danger: История Игги и The Stooges',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -85,7 +87,7 @@ export const movies = [
     nameRU: 'Дженис: Маленькая девочка грустит',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: true,
   },
   {
@@ -93,7 +95,7 @@ export const movies = [
     nameRU: 'Соберись перед прыжком',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: false,
   },
   {
@@ -101,7 +103,7 @@ export const movies = [
     nameRU: 'Пи Джей Харви: A dog called money',
     duration: 107,
     trailer: 'https://youtu.be/dQw4w9WgXcQ?si=NsbEVxlOPe3Zqb9i',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: false,
   },
   {
@@ -109,7 +111,7 @@ export const movies = [
     nameRU: 'По волнам: Искусство звука в кино',
     duration: 107,
     trailer: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image: 'https://picsum.photos/360/201',
+    image: moviePlaceholder,
     saved: false,
   },
 ];

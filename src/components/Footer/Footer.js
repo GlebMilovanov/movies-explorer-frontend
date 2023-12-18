@@ -21,7 +21,7 @@ export const Footer = () => {
           <li className="footer__element">
             <Link
               to="https://practicum.yandex.ru"
-              className="footer__link link_hover"
+              className="footer__link link link_hover"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -31,7 +31,7 @@ export const Footer = () => {
           <li className="footer__element">
             <Link
               to="https://github.com/GlebMilovanov"
-              className="footer__link link_hover"
+              className="footer__link link link_hover"
               target="_blank"
               rel="noreferrer noopener"
             >

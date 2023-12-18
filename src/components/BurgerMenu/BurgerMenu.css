@@ -6,6 +6,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   transition: all 0.3s linear;
+  z-index: 10000;
 }
 
 .burger-menu_active {

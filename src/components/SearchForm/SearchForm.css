@@ -7,7 +7,7 @@
 }
 
 .search__form {
-  margin: 144px 0 0;
+  margin: 70px 0 0;
   box-shadow: 0px 3px 14px 0px #00000014;
   border-radius: 9px;
   width: 100%;
@@ -26,9 +26,9 @@
 }
 
 .search__image {
-  width: 34px;
-  height: 34px;
-  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
 }
 
 .search__input {
@@ -41,6 +41,10 @@
   color: #000000;
   outline: none;
   width: 100%;
+}
+
+.search__input:focus {
+  outline: 1px solid #f3c1f8;
 }
 
 .search__button {
@@ -120,6 +124,18 @@
 }
 
 @media screen and (max-width: 1279px) {
+  .search__form {
+    padding: 19px;
+    margin: 80px 0 0;
+  }
+
+  .search__checkbox-label {
+    margin-left: 19px;
+  }
+
+  .search__line {
+    margin: 109px 0 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -129,7 +145,6 @@
   }
 
   .search__form {
-    margin: 154px 0 0;
     padding: 0;
     box-shadow: none;
     flex-direction: column;

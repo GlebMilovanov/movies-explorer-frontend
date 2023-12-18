@@ -40,7 +40,7 @@ export const MoviesCardList = ({ movies }) => {
       </ul>
       <button
         type="button"
-        className={`gallery__more button_hover ${
+        className={`gallery__more button button_hover ${
           count >= movies.length && 'gallery__more_hidden'
         }`}
         onClick={clickMore}

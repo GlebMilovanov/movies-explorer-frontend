@@ -33,7 +33,7 @@ export const Profile = ({ setLoggedIn }) => {
 
   return (
     <section className="profile">
-      <h2 className="profile__greeting">Привет, Виталий!</h2>
+      <h1 className="profile__greeting">Привет, Виталий!</h1>
       <form
         className="profile__form"
         name="profile"
@@ -76,6 +76,7 @@ export const Profile = ({ setLoggedIn }) => {
               name="profileEmail"
               placeholder="E-mail"
               value={values.profileEmail}
+              minLength={3}
               required
               onChange={handleChange}
               disabled={!isEditing}
@@ -94,7 +95,7 @@ export const Profile = ({ setLoggedIn }) => {
             </span>
             <button
               type="submit"
-              className={`profile__submit-btn button_hover ${
+              className={`profile__submit-btn button button_hover ${
                 isValid ? '' : 'profile__submit-btn_disabled'
               }`}
               disabled={!isValid}
@@ -106,7 +107,7 @@ export const Profile = ({ setLoggedIn }) => {
           <>
             <button
               type="button"
-              className="profile__edit-btn button_hover"
+              className="profile__edit-btn button button_hover"
               onClick={handleEdit}
             >
               Редактировать
@@ -114,7 +115,7 @@ export const Profile = ({ setLoggedIn }) => {
             <Link
               to={'/'}
               onClick={handleLogout}
-              className="profile__logout-link link_hover"
+              className="profile__logout-link link link_hover"
             >
               Выйти из аккаунта
             </Link>

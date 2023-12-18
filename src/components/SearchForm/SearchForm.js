@@ -1,6 +1,6 @@
 import './SearchForm.css';
 
-import search from '../../images/search.png';
+import search from '../../images/search.svg';
 
 export const SearchForm = () => {
   return (
@@ -15,11 +15,11 @@ export const SearchForm = () => {
             placeholder="Фильм"
             required
           />
-          <button type="submit" className="search__button button_hover">
+          <button type="submit" className="search__button button button_hover">
             Найти
           </button>
         </div>
-        <label className="search__checkbox-label">
+        <label className="search__checkbox-label button button_hover">
           <input className="search__checkbox" type="checkbox" />
           <span className="search__checkbox-appearance" />
           <span className="search__checkbox-caption">Короткометражки</span>

@@ -60,7 +60,7 @@ export const MoviesCard = ({ name, duration, image, trailer, saved }) => {
             standard: (
               <button
                 type="button"
-                className="movie__button movie__button_type_save button_hover"
+                className="movie__button movie__button_type_save button button_hover"
                 onClick={handleSaveClick}
               >
                 Сохранить
@@ -69,19 +69,27 @@ export const MoviesCard = ({ name, duration, image, trailer, saved }) => {
             saved: (
               <button
                 type="button"
-                className="movie__button movie__button_type_saved button_hover"
+                className="movie__button movie__button_type_saved button button_hover"
                 onClick={handleDeleteClick}
               >
-                <img src={savedIcon} alt="Сохранен" className='movie__saved-icon'/>
+                <img
+                  src={savedIcon}
+                  alt="Сохранен"
+                  className="movie__saved-icon"
+                />
               </button>
             ),
             delete: (
               <button
                 type="button"
-                className="movie__button movie__button_type_delete button_hover"
+                className="movie__button movie__button_type_delete button button_hover"
                 onClick={handleDeleteClick}
               >
-                <img src={deleteIcon} alt="Удалить" className='movie__delete-icon'/>
+                <img
+                  src={deleteIcon}
+                  alt="Удалить"
+                  className="movie__delete-icon"
+                />
               </button>
             ),
           }[buttonType]

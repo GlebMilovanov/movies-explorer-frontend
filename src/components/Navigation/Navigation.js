@@ -19,14 +19,14 @@ export const Navigation = ({ loggedIn, toggleMenu }) => {
         <>
           <Link
             to={'/signup'}
-            className="header__signup link_hover"
+            className="header__signup link link_hover"
             onClick={toggleMenu}
           >
             Регистрация
           </Link>
           <Link
             to={'/signin'}
-            className="header__signin link_hover"
+            className="header__signin link link_hover"
             onClick={toggleMenu}
           >
             Вход
@@ -39,7 +39,7 @@ export const Navigation = ({ loggedIn, toggleMenu }) => {
               <li>
                 <Link
                   to={'/'}
-                  className={`header__link link_hover ${
+                  className={`header__link link link_hover ${
                     isMainPage ? 'header__link_active' : ''
                   }`}
                   onClick={toggleMenu}
@@ -51,7 +51,7 @@ export const Navigation = ({ loggedIn, toggleMenu }) => {
             <li>
               <Link
                 to={'/movies'}
-                className={`header__link link_hover ${
+                className={`header__link link link_hover ${
                   isMoviesPage ? 'header__link_active' : ''
                 }`}
                 onClick={toggleMenu}
@@ -62,7 +62,7 @@ export const Navigation = ({ loggedIn, toggleMenu }) => {
             <li>
               <Link
                 to={'/saved-movies'}
-                className={`header__link link_hover ${
+                className={`header__link link link_hover ${
                   isSavedMoviesPage ? 'header__link_active' : ''
                 }`}
                 onClick={toggleMenu}
@@ -73,7 +73,7 @@ export const Navigation = ({ loggedIn, toggleMenu }) => {
           </ul>
           <Link
             to={'/profile'}
-            className="header__profile-link link_hover"
+            className="header__profile-link link link_hover"
             onClick={toggleMenu}
           >
             Аккаунт
