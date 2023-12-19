@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  position: relative;
 }
 
 .movie__link {
   text-decoration: none;
-  position: relative;
 }
 
 .movie__link:hover .movie__image {

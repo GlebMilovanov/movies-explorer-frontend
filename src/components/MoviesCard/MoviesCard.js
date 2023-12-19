@@ -55,46 +55,46 @@ export const MoviesCard = ({ name, duration, image, trailer, saved }) => {
         className="movie__link"
       >
         <img src={image} alt={name} className="movie__image" />
-        {
-          {
-            standard: (
-              <button
-                type="button"
-                className="movie__button movie__button_type_save button button_hover"
-                onClick={handleSaveClick}
-              >
-                Сохранить
-              </button>
-            ),
-            saved: (
-              <button
-                type="button"
-                className="movie__button movie__button_type_saved button button_hover"
-                onClick={handleDeleteClick}
-              >
-                <img
-                  src={savedIcon}
-                  alt="Сохранен"
-                  className="movie__saved-icon"
-                />
-              </button>
-            ),
-            delete: (
-              <button
-                type="button"
-                className="movie__button movie__button_type_delete button button_hover"
-                onClick={handleDeleteClick}
-              >
-                <img
-                  src={deleteIcon}
-                  alt="Удалить"
-                  className="movie__delete-icon"
-                />
-              </button>
-            ),
-          }[buttonType]
-        }
       </a>
+      {
+        {
+          standard: (
+            <button
+              type="button"
+              className="movie__button movie__button_type_save button button_hover"
+              onClick={handleSaveClick}
+            >
+              Сохранить
+            </button>
+          ),
+          saved: (
+            <button
+              type="button"
+              className="movie__button movie__button_type_saved button button_hover"
+              onClick={handleDeleteClick}
+            >
+              <img
+                src={savedIcon}
+                alt="Сохранен"
+                className="movie__saved-icon"
+              />
+            </button>
+          ),
+          delete: (
+            <button
+              type="button"
+              className="movie__button movie__button_type_delete button button_hover"
+              onClick={handleDeleteClick}
+            >
+              <img
+                src={deleteIcon}
+                alt="Удалить"
+                className="movie__delete-icon"
+              />
+            </button>
+          ),
+        }[buttonType]
+      }
       <div className="movie__info">
         <h2 className="movie__title">{name}</h2>
         <p className="movie__duration">{time}</p>

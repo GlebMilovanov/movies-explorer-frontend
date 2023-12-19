@@ -7,10 +7,12 @@
   background-color: rgba(0, 0, 0, 0.3);
   transition: all 0.3s linear;
   z-index: 10000;
+  display: none;
 }
 
 .burger-menu_active {
   right: 0;
+  display: block;
 }
 
 .burger-menu__content {
